@@ -5,6 +5,9 @@
 			{% include nav.html %}
 			
 			<div class="container">
+				{% for post in site.posts %}
+				<h2>{{post.title}}</h2>
+				{% endfor %}
 			{{ content }}
 			</div><!-- /.container -->
 			
